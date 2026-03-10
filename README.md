@@ -7,15 +7,6 @@ Python utilities to parse IDMR Task Card XML and transform it into:
 
 ## What Is Included
 
-- `taskcard_xml_parser.py`  
-  Minimal Excel exporter that generates:
-  - `TaskCard_Metadata`
-  - `TaskCard_Actionable`
-  - `TaskCard_Tables`
-
-- `taskcard_xml_parser_full.py`  
-  Extended parser version with additional sheets and options kept for backward compatibility.
-
 - `taskcard_xml_to_api_payload.py`  
   Converter from source IDMR XML to TRAX-style payload XML.
   - Splits task content by section (`A.`, `B.`, `C.`, ...)
@@ -35,13 +26,6 @@ Install:
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### 1) Export source XML to Excel (minimal)
-
-```bash
-python taskcard_xml_parser.py --xml 72071_TRAXExport1.xml --output 72071_TRAXExport1_extract.xlsx
-```
 
 ### 2) Convert source XML to TRAX API payload XML
 
